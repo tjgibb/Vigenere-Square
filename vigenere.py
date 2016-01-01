@@ -8,6 +8,7 @@ def encode():
     key = getKey()
     lenKey = len(key)
     message = input("Please enter the message you wish to encode: ")
+    message = message.lower()
     lenMessage = len(message)
     i = 0
     j = 0
@@ -56,5 +57,7 @@ def main():
             decode()
     else:
         decode()
-
+    
 main()
+
+raw_input()
